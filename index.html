@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD Example with JSONPlaceholder</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <h1>CRUD Operations with JSONPlaceholder</h1>
+
+    <button id="DisplayDataButton">Display Data</button>
+    <button id="addNewButton">Add New Entry</button>
+
+    <div id="formContainer" style="display: none;">
+        <form id="entryForm">
+            <input type="hidden" id="entryMode" value="add" />
+            <input type="text" id="name" placeholder="Name" required />
+            <input type="email" id="email" placeholder="Email" required />
+            <input type="number" id="age" placeholder="Age" required />
+            <button type="submit" id="formSubmitButton">Submit</button>
+            <button type="button" onclick="closeForm()">Cancel</button>
+        </form>
+    </div>
+
+    <table id="dataTable">
+        <thead>
+            <tr></tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+</body>
+
+</html>
